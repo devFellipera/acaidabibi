@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finalizar Pedido</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<h2>🛒 Seu Carrinho</h2>
+
+<!-- LISTA DE ITENS -->
+<div id="lista"></div>
+
+<!-- TAXA -->
+<p>🚚 Taxa de entrega: R$ <span id="entrega">5.00</span></p>
+
+<!-- TOTAL -->
+<h3>Total: R$ <span id="total">0.00</span></h3>
+
+<hr>
+
+<h2>📦 Dados do Cliente</h2>
+
+<input type="text" id="nome" placeholder="Seu nome">
+<input type="text" id="telefone" placeholder="Telefone">
+<input type="text" id="endereco" placeholder="Endereço">
+
+<select id="pagamento">
+<option>Pix</option>
+<option>Cartão</option>
+<option>Dinheiro</option>
+</select>
+
+<!-- BOTÕES -->
+<button onclick="window.location.href='index.html'">
+➕ Adicionar mais itens
+</button>
+
+<button onclick="finalizar()">
+✅ Enviar Pedido
+</button>
+<!-- BOTÃO VOLTAR -->
+<button onclick="voltar()">⬅️ Voltar</button>
+
+<button onclick="cancelarPedido()" style="background:red;">
+❌ Cancelar Pedido
+</button>
+
+<!-- SCRIPT -->
+<script src="script.js"></script>
+
+<script>
+carregarCarrinho();
+</script>
+
+</body>
+</html>

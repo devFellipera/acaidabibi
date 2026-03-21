@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <title>Açaí da Bibi</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- topo   -->
+
+
+
+        <div class="topo">
+            <div class="banner">
+                <img src="fotos/banner.png">
+            </div>
+
+        <div class ="info-loja">
+            <h2>Açaí da Bibi</h2>
+            <p>🕒 Aberto Todos os Dias das 12:00 - 23:00 </p>
+            <span class="status">ABERTO</span>
+            </div>
+        </div>
+            <!-- ICONES -->
+            <div class="icones">
+
+            <div onclick="toggle('pagamentoBox')">
+                💳
+                <p>Pagamentos</p>
+            </div>
+
+            <div>
+                ⏱️
+                <p>25-45min</p>
+            </div>
+
+            <div onclick="toggle('infoBox')">
+                ℹ️
+                <p>Info</p>
+            </div>
+
+            </div>
+
+            <!-- BOX PAGAMENTO -->
+            <div id="pagamentoBox" class="box hidden">
+            <p>✔ Pix</p>
+            <p>✔ Cartão</p>
+            <p>✔ Dinheiro</p>
+            </div>
+
+            <!-- BOX INFO -->
+            <div id="infoBox" class="box hidden">
+            <p>📍 Entregas na região : Freguesia do ó</p>
+            <p>🚚 Delivery rápido</p>
+            </div>
+
+
+
+
+
+            <div class="slider">
+                <div class="slide active">
+                    <img src="fotos/acai300ml.jpeg">
+                </div>
+                <div class="slide">
+                    <img src="fotos/acai440ml.jpeg">
+                </div>
+                <div class="slide">
+                    <img src="fotos/acai550ml.jpeg">
+                </div>
+            </div>
+            <!-- produtos -->
+            <h2>🍇 Escolha seu Açaí</h2>
+
+            <div class="produto" onclick="selecionar('Açaí 300ml',15.9)">
+                <img src="fotos/acai300ml.jpeg">
+                <h3>300ml - R$15,90</h3>
+            </div>
+
+            <div class="produto" onclick="selecionar('Açaí 440ml',18.9)">
+                <img src="fotos/acai440ml.jpeg">
+                <h3>440ml - R$18,90</h3>
+            </div>
+
+            <div class="produto" onclick="selecionar('Açaí 550ml',28.9)">
+                <img src="fotos/acai550ml.jpeg">
+                <h3>550ml - R$28,90</h3>
+            </div>
+            
+            <h2>🥤 Bebidas</h2>
+
+                <div class="produto" onclick="selecionar('Água', 5)">
+                <img src="fotos/agua 500ml sgas.jpeg">
+                <h3>Água - R$5,00</h3>
+                </div>
+
+                <div class="produto" onclick="selecionar('Coca-Cola', 8)">
+                <img src="fotos/coca cola 350ml.jpeg">
+                <h3>Coca-Cola - R$8,00</h3>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <script src="script.js"></script>
+                <footer class="footer">
+                <p>© 2026 Açaí da Bibi - Todos os direitos reservados</p>
+                <p>Desenvolvido por <strong>@fellipera_</strong></p>
+                </footer>
+
+    </body>
+</html>

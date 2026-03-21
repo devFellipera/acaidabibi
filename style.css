@@ -1,0 +1,208 @@
+/* RESET */
+body {
+  font-family: Arial;
+  background:#f2eef7;
+  margin:0;
+  padding:15px;
+}
+
+/* TITULOS */
+h2 {
+  color:#874fe7;
+}
+
+/* ================= TOPO ================= */
+.topo {
+  background: linear-gradient(180deg, #d7baf7, #ffffff);
+  padding-bottom: 50px;
+  margin-bottom: 60px;
+}
+
+/* BANNER CENTRAL */
+.banner {
+  display:flex;
+  justify-content:center;
+  margin-top:10px;
+}
+
+.banner img {
+  width:auto;
+  height:160px;
+  object-fit:cover;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* INFO LOJA */
+.info-loja {
+  text-align:center;
+  margin-top:10px;
+}
+
+.info-loja h2 {
+  margin:5px 0;
+  color:#6b21a8;
+}
+
+.status {
+  color:green;
+  font-weight:bold;
+}
+
+/* ================= ICONES ================= */
+.icones {
+  display:flex;
+  justify-content:space-around;
+  margin:20px 0;
+  text-align:center;
+}
+
+/* ================= BOX ================= */
+.box {
+  background:#b9addb;
+  margin:10px;
+  padding:10px;
+  border-radius:10px;
+}
+
+.hidden {
+  display:none;
+}
+
+/* ================= SLIDER ================= */
+.slider {
+  width:92%;
+  margin:20px auto;
+  height:180px;
+  border-radius:15px;
+  overflow:hidden;
+  position:relative;
+}
+
+.slide {
+  position:absolute;
+  width:100%;
+  height:100%;
+  opacity:0;
+  transition:opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+  opacity:1;
+}
+
+.slide img {
+  height:100%;
+  object-fit:cover;
+}
+
+/* ================= DOTS ================= */
+.dots {
+  text-align:center;
+  margin-top:5px;
+}
+
+.dot {
+  height:8px;
+  width:8px;
+  margin:3px;
+  background:#ccc;
+  border-radius:50%;
+  display:inline-block;
+  cursor:pointer;
+}
+
+.dot.active {
+  background:#7c3aed;
+}
+
+/* ================= PRODUTOS ================= */
+.produto {
+  display:flex;
+  gap:10px;
+  margin:15px 0;
+  cursor:pointer;
+  align-items:center;
+}
+
+.produto img {
+  width:80px;
+  border-radius:10px;
+}
+
+.produto h3 {
+  margin:0;
+}
+
+/* ================= FORM ================= */
+button {
+  width:100%;
+  padding:12px;
+  background:#7c3aed;
+  color:#fff;
+  border:none;
+  border-radius:10px;
+}
+
+input, select {
+  width:100%;
+  padding:10px;
+  margin:5px 0;
+  border-radius:8px;
+  border:1px solid #ddd;
+}
+
+
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  border-top: 1px solid #eee;
+}
+
+.footer strong {
+  color: #7c3aed;
+}
+
+
+button {
+  margin-bottom:10px;
+}
+
+
+.card {
+  background:#f9f9f9;
+  padding:15px;
+  margin:15px 0;
+  border-radius:12px;
+}
+
+.opcao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 8px 0;
+  cursor: pointer;
+  border: 1px solid #eee;
+}
+
+/* lado esquerdo (checkbox + texto) */
+.opcao span {
+  flex: 1;
+  margin-left: 10px;
+}
+
+/* checkbox alinhado */
+.opcao input {
+  width: 18px;
+  height: 18px;
+}
+.opcao:hover {
+  border-color: #7c3aed;
+  background: #f3e8ff;
+}
